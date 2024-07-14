@@ -1,5 +1,5 @@
 --CREATING A RELATION BY LOADING USER DATA FILE
-users = LOAD '/user/maria_dev/book.csv' 
+users = LOAD '/user/maria_dev/pig/book.user' 
 USING PigStorage(',') 
 AS (isbn:chararray, title:chararray, author:chararray, pub_year:chararray);
 
